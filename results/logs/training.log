@@ -1,0 +1,77 @@
+2024-11-20 21:27:56,757 - INFO - Starting model training pipeline
+2024-11-20 21:27:56,757 - INFO - Preparing data...
+2024-11-20 21:27:58,109 - INFO - 
+Training RNN model
+2024-11-20 21:27:58,667 - ERROR - Error training rnn: For unbatched 2-D input, hx should also be 2-D but got 3-D tensor
+2024-11-20 21:27:58,668 - INFO - 
+Training LSTM model
+2024-11-20 21:27:58,671 - ERROR - Error training lstm: For unbatched 2-D input, hx and cx should also be 2-D but got (3-D, 3-D) tensors
+2024-11-20 21:27:58,671 - INFO - 
+Training CNN model
+2024-11-20 21:27:58,697 - ERROR - Error training cnn: Dimension out of range (expected to be in range of [-2, 1], but got 2)
+2024-11-20 21:27:58,698 - INFO - 
+Training ARIMA model
+2024-11-20 21:27:58,698 - ERROR - Error training ARIMA: too many indices for array: array is 2-dimensional, but 3 were indexed
+2024-11-20 21:27:58,698 - INFO - 
+Results saved to results/training_results_20241120_212758.json
+2024-11-20 21:33:47,276 - INFO - Starting model training pipeline
+2024-11-20 21:33:47,276 - INFO - Preparing data...
+2024-11-20 21:35:16,620 - INFO - Starting model training pipeline
+2024-11-20 21:35:16,620 - INFO - Preparing data...
+2024-11-20 21:36:59,604 - INFO - Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
+2024-11-20 21:36:59,604 - INFO - NumExpr defaulting to 16 threads.
+2024-11-20 21:37:00,016 - INFO - Starting model training pipeline
+2024-11-20 21:37:00,016 - INFO - Preparing data...
+2024-11-20 21:37:01,401 - INFO - 
+Training RNN model
+2024-11-20 21:37:03,632 - INFO - RNN training completed:
+2024-11-20 21:37:03,632 - INFO - Best loss: 0.001486
+2024-11-20 21:37:03,632 - INFO - Training time: 1.70 seconds
+2024-11-20 21:37:03,632 - INFO - 
+Training LSTM model
+2024-11-20 21:37:04,866 - INFO - LSTM training completed:
+2024-11-20 21:37:04,866 - INFO - Best loss: 0.001950
+2024-11-20 21:37:04,866 - INFO - Training time: 1.23 seconds
+2024-11-20 21:37:04,866 - INFO - 
+Training CNN model
+2024-11-20 21:37:06,897 - INFO - CNN training completed:
+2024-11-20 21:37:06,897 - INFO - Best loss: 0.008153
+2024-11-20 21:37:06,897 - INFO - Training time: 2.02 seconds
+2024-11-20 21:37:06,897 - INFO - 
+Training ARIMA model
+2024-11-20 21:37:06,897 - ERROR - Error training ARIMA: too many indices for array: array is 2-dimensional, but 3 were indexed
+2024-11-20 21:37:06,898 - INFO - 
+Results saved to /home/mackydubzz/projects/stock_prediction/results/training_results_20241120_213706.json
+2024-11-20 21:44:14,261 - INFO - Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
+2024-11-20 21:44:14,262 - INFO - NumExpr defaulting to 16 threads.
+2024-11-20 21:44:15,052 - INFO - Starting model training pipeline
+2024-11-20 21:44:15,053 - INFO - Preparing data...
+2024-11-20 21:44:16,497 - INFO - 
+Training RNN model
+2024-11-20 21:44:18,928 - INFO - RNN training completed:
+2024-11-20 21:44:18,929 - INFO - Best loss: 0.001569
+2024-11-20 21:44:18,929 - INFO - Training time: 1.57 seconds
+2024-11-20 21:44:18,929 - INFO - 
+Training LSTM model
+2024-11-20 21:44:21,031 - INFO - LSTM training completed:
+2024-11-20 21:44:21,031 - INFO - Best loss: 0.001732
+2024-11-20 21:44:21,031 - INFO - Training time: 2.10 seconds
+2024-11-20 21:44:21,031 - INFO - 
+Training CNN model
+2024-11-20 21:44:21,503 - INFO - CNN training completed:
+2024-11-20 21:44:21,503 - INFO - Best loss: 0.006614
+2024-11-20 21:44:21,503 - INFO - Training time: 0.46 seconds
+2024-11-20 21:44:21,504 - INFO - 
+Training ARIMA model
+2024-11-20 21:44:21,504 - INFO - ARIMA input shape: (10600,)
+2024-11-20 21:44:21,504 - INFO - ARIMA input range: [0.00, 1.00]
+2024-11-20 21:44:21,774 - INFO - ARIMA training completed:
+2024-11-20 21:44:21,774 - INFO - Training time: 0.27 seconds
+2024-11-20 21:44:21,774 - INFO - First few predictions: 10599    0.006222
+10600    0.008176
+10601    0.010696
+10602    0.014447
+10603    0.017139
+Name: predicted_mean, dtype: float64
+2024-11-20 21:44:21,776 - INFO - 
+Results saved to /home/mackydubzz/projects/stock_prediction/results/training_results_20241120_214421.json

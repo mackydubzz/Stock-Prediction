@@ -1,0 +1,32 @@
+2024-11-21 21:26:39,397 - INFO - Starting model training pipeline
+2024-11-21 21:26:39,398 - INFO - Preparing data...
+2024-11-21 21:26:40,952 - INFO - 
+Training RNN model
+2024-11-21 21:26:41,498 - ERROR - Error training rnn: input.size(-1) must be equal to input_size. Expected 1, got 100
+2024-11-21 21:26:41,498 - INFO - 
+Training LSTM model
+2024-11-21 21:26:41,501 - ERROR - Error training lstm: input.size(-1) must be equal to input_size. Expected 1, got 100
+2024-11-21 21:26:41,501 - INFO - 
+Training CNN model
+2024-11-21 21:26:41,523 - ERROR - Error training cnn: Dimension out of range (expected to be in range of [-2, 1], but got 2)
+2024-11-21 21:26:41,523 - INFO - 
+Training ARIMA model
+2024-11-21 21:26:41,523 - ERROR - Error training ARIMA: too many indices for array: array is 2-dimensional, but 3 were indexed
+2024-11-21 21:26:41,523 - INFO - 
+Results saved to results/training_results_20241121_212641.json
+2024-11-21 21:28:36,921 - INFO - Starting model training pipeline
+2024-11-21 21:28:36,921 - INFO - Preparing data...
+2024-11-21 21:28:38,369 - INFO - 
+Training RNN model
+2024-11-21 21:28:38,888 - ERROR - Error training rnn: input.size(-1) must be equal to input_size. Expected 1, got 100
+2024-11-21 21:28:38,889 - INFO - 
+Training LSTM model
+2024-11-21 21:28:38,891 - ERROR - Error training lstm: For unbatched 2-D input, hx and cx should also be 2-D but got (3-D, 3-D) tensors
+2024-11-21 21:28:38,891 - INFO - 
+Training CNN model
+2024-11-21 21:28:38,902 - ERROR - Error training cnn: Dimension out of range (expected to be in range of [-2, 1], but got 2)
+2024-11-21 21:28:38,902 - INFO - 
+Training ARIMA model
+2024-11-21 21:28:38,903 - ERROR - Error training ARIMA: too many indices for array: array is 2-dimensional, but 3 were indexed
+2024-11-21 21:28:38,903 - INFO - 
+Results saved to results/training_results_20241121_212838.json
