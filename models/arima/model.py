@@ -26,7 +26,8 @@ class StockARIMA:
             data = pd.Series(data)
         
         # Take first difference to ensure stationarity
-        diff_data = data.diff().dropna()
+        # (reset index: statsmodels requires a supported index starting at 0)
+        diff_data = data.diff().dropna().reset_index(drop=True)
         
         # Fit ARIMA model
         self.model = ARIMA(
@@ -70,7 +71,7 @@ class StockARIMA:
             
             try:
                 # Fit model on window
-                diff_window = train_window.diff().dropna()
+                diff_window = train_window.diff().dropna().reset_index(drop=True)
                 window_model = ARIMA(
                     diff_window,
                     order=self.order,
