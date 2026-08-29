@@ -2,6 +2,8 @@
 
 A PyTorch reproduction of the paper **"Stock Price Prediction using LSTM, RNN and CNN-Sliding Window Model"** (Hiransha et al.), built as a Master's degree final project for the course *Intelligent Algorithms*.
 
+Paper: https://ieeexplore.ieee.org/document/8126078
+
 The project benchmarks three deep-learning architectures — RNN, LSTM, and a 1D-CNN applied over sliding windows of price data — plus a classical ARIMA baseline, on stock data (paper tickers: INFY, TCS.NS, CIPLA.NS; comparison tickers: NVDA, TSLA).
 
 ## Project Structure
@@ -68,7 +70,10 @@ Run the tests:
 
 Example output lives in `results/` (prediction plot: `results/predictions_INFY.png`). Checkpoints and per-run artifacts are generated during training and are not kept in the repo.
 
+## Divergence from the Paper
+
+This is not a strict reproduction. The original paper uses the NSE dataset over multi-year daily closing prices, whereas this project trains on only the last **5 days of 1-minute intraday data** fetched via yfinance — a shortcut chosen so runs complete quickly. Window/horizon parameters (window 100, horizon 10) are also approximations rather than the paper's exact setup. Treat the results as a demonstration of the architecture comparison, not a replication of the paper's figures. Adjust `StockDataPipeline` (start/end dates, interval) for longer histories.
+
 ## Notes
 
 - The original development environment is captured in `environment.yml` (conda, Python 3.10, PyTorch 2.5.1 + CUDA 12.1). `requirements.txt` is the lightweight CPU-friendly install.
-- Data windows are deliberately short (5 days of intraday data) so runs complete quickly; adjust `StockDataPipeline` for longer histories.
